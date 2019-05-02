@@ -10,6 +10,7 @@ This probably should not be exposed to end users. :-)
 # Installation
 
 ```
+export CFLAGS="-DSQLITE_ENABLE_FTS3_TOKENIZER"
 npm install -g @reality.hk/sqliteproxy
 ```
 
