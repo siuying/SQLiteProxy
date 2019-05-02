@@ -1,5 +1,5 @@
 {
-  "name": "@siuying/sqliteproxy",
+  "name": "@reality.hk/sqliteproxy",
   "version": "0.5.2",
   "description": "HTTP JSON Proxy for SQLite",
   "main": "main.js",

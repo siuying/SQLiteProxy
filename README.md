@@ -10,7 +10,7 @@ This probably should not be exposed to end users. :-)
 # Installation
 
 ```
-npm install -g @siuying/sqliteproxy
+npm install -g @reality.hk/sqliteproxy
 ```
 
 # Options
