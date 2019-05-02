@@ -11,7 +11,7 @@ console.log("readonly", "=", flags.get("readonly"));
 console.log("port", "=", flags.get("port"));
 
 const Database = require("better-sqlite3");
-
+const mozporter = require('better-sqlite3-mozporter');
 const express = require("express");
 const bodyParser = require("body-parser");
 
@@ -35,7 +35,7 @@ function getSqlExecutor(httpRequestFieldName) {
     let db;
     try {
       const readonly = flags.get("readonly");
-      db = new Database(flags.get("db"), { readonly });
+      db = mozporter(new Database(flags.get("db"), { readonly }));
       if (!readonly) {
         db.pragma("journal_mode = WAL");
       }

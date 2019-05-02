@@ -1,4 +1,6 @@
-# SQLiteProxy
+# SQLiteProxy + Mozilla Porter stemmer for CJK FTS
+
+My fork on [SQLiteProxy](https://github.com/assafmo/SQLiteProxy) with additional Mozilla Porter stemmer for CJK FTS.
 
 A simple HTTP JSON proxy for SQLite.  
 This probably should not be exposed to end users. :-)
@@ -8,7 +10,7 @@ This probably should not be exposed to end users. :-)
 # Installation
 
 ```
-npm install -g sqliteproxy
+npm install -g @siuying/sqliteproxy
 ```
 
 # Options
@@ -107,14 +109,14 @@ $ fg
 
 # Docker
 
-[https://hub.docker.com/r/assafmo/sqliteproxy](https://hub.docker.com/r/assafmo/sqliteproxy/)
+[https://hub.docker.com/r/siuying/sqliteproxy](https://hub.docker.com/r/siuying/sqliteproxy/)
 
 ```
-docker run -d -p 2048:2048 -v /path/to/my/db/dir/:/data/ assafmo/sqliteproxy --db /data/my.db
+docker run -d -p 2048:2048 -v /path/to/my/db/dir/:/data/ siuying/sqliteproxy --db /data/my.db
 ```
 
 ```
-docker run -d -p 2048:2048 -v /path/to/my/db/dir/:/data/ assafmo/sqliteproxy --readonly --db /data/my.db
+docker run -d -p 2048:2048 -v /path/to/my/db/dir/:/data/ siuying/sqliteproxy --readonly --db /data/my.db
 ```
 
 # License

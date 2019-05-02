@@ -15,15 +15,22 @@ array-flatten@1.1.1:
   resolved "https://registry.yarnpkg.com/array-flatten/-/array-flatten-1.1.1.tgz#9a5f699051b1e7073328f2a008968b64ea2955d2"
   integrity sha1-ml9pkFGx5wczKPKgCJaLZOopVdI=
 
-better-sqlite3@5.0.1^:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/better-sqlite3/-/better-sqlite3-5.0.1.tgz#5addb5dcf18c9374c570a1eab7694e67fc9437a3"
-  integrity sha512-dyZk+gDYNPw14maYX5LG/2SCUTiB7jCvETd+bBYqhFyji3oG+UQFN452sUWSjCHCmfg1JtMbLT7WmqB8GLq8Gw==
+better-sqlite3-mozporter@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/better-sqlite3-mozporter/-/better-sqlite3-mozporter-1.0.0.tgz#4f144992fa461e31b4c0ad7d34b1a2e880203a0a"
+  integrity sha512-qf8MrIZswNy0fJ61uQ3yUYGP3h5OpUpgAQUCx4uW6CnzYmj/YwvLa+Z8Jhf/kWYf7bYhtma8cSSL5F9lCv3lzA==
+  dependencies:
+    better-sqlite3 ">= 5.4.0"
+
+"better-sqlite3@>= 5.4.0", better-sqlite3@^5.0.1:
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/better-sqlite3/-/better-sqlite3-5.4.0.tgz#88c4894f6c0484dc0a89a9ba12268976cd26b1da"
+  integrity sha512-Uj1ZYOcq1GtFyFgJgqMVDoDLTy1B1pM9+bULnlX8szRX4cPjE/7JbKxCzQGhYlZlLkHQvtXXhCZ3skqsQ2byMA==
   dependencies:
     integer "^2.1.0"
     tar "^4.4.6"
 
-body-parser@1.18.3, body-parser@1.18.3^:
+body-parser@1.18.3:
   version "1.18.3"
   resolved "https://registry.yarnpkg.com/body-parser/-/body-parser-1.18.3.tgz#5b292198ffdd553b3a0f20ded0592b956955c8b4"
   integrity sha1-WykhmP/dVTs6DyDe0FkrlWlVyLQ=
@@ -56,7 +63,7 @@ compressible@~2.0.14:
   dependencies:
     mime-db ">= 1.36.0 < 2"
 
-compression@1.7.3^:
+compression@1.7.3:
   version "1.7.3"
   resolved "https://registry.yarnpkg.com/compression/-/compression-1.7.3.tgz#27e0e176aaf260f7f2c2813c3e440adb9f1993db"
   integrity sha512-HSjyBG5N1Nnz7tF2+O7A9XUhyjru71/fwgNb7oIsEVHR0WShfs2tIS/EySLgiTe98aOK18YDlMXpzjCXY/n9mg==
@@ -126,7 +133,7 @@ etag@~1.8.1:
   resolved "https://registry.yarnpkg.com/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
   integrity sha1-Qa4u62XvpiJorr/qg6x9eSmbCIc=
 
-express@4.16.4^:
+express@4.16.4:
   version "4.16.4"
   resolved "https://registry.yarnpkg.com/express/-/express-4.16.4.tgz#fddef61926109e24c515ea97fd2f1bdbf62df12e"
   integrity sha512-j12Uuyb4FMrd/qQAm6uCHAkPtO8FDTRJZBDd5D2KOL2eLaz1yUNdUB/NOIyq0iU4q4cFarsUCrnFDPBcnksuOg==
@@ -175,7 +182,7 @@ finalhandler@1.1.1:
     statuses "~1.4.0"
     unpipe "~1.0.0"
 
-flags@0.1.3^:
+flags@0.1.3:
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/flags/-/flags-0.1.3.tgz#961d2fc8cdf3669d63041e30e5b24adad36f5758"
   integrity sha1-lh0vyM3zZp1jBB4w5bJK2tNvV1g=

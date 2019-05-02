@@ -1,5 +1,5 @@
 {
-  "name": "sqliteproxy",
+  "name": "@siuying/sqliteproxy",
   "version": "0.5.2",
   "description": "HTTP JSON Proxy for SQLite",
   "main": "main.js",
@@ -7,11 +7,12 @@
     "sqliteproxy": "./main.js"
   },
   "dependencies": {
-    "body-parser": "1.18.3^",
-    "compression": "1.7.3^",
-    "express": "4.16.4^",
-    "flags": "0.1.3^",
-    "better-sqlite3": "5.0.1^"
+    "better-sqlite3": "^5.0.1",
+    "better-sqlite3-mozporter": "^1.0.0",
+    "body-parser": "1.18.3",
+    "compression": "1.7.3",
+    "express": "4.16.4",
+    "flags": "0.1.3"
   },
   "keywords": [
     "sqlite",
@@ -22,13 +23,13 @@
   "author": "assafmo",
   "repository": {
     "type": "git",
-    "url": "https://github.com/assafmo/SQLiteProxy.git"
+    "url": "https://github.com/siuying/SQLiteProxy.git"
   },
   "bugs": {
-    "url": "https://github.com/assafmo/SQLiteProxy/issues"
+    "url": "https://github.com/siuying/SQLiteProxy/issues"
   },
   "license": "MIT",
   "scripts": {
-    "build-docker": "VER=$(jq -r .version package.json); docker build -t assafmo/sqliteproxy:\"$VER\" .; docker tag assafmo/sqliteproxy:\"$VER\" assafmo/sqliteproxy:latest"
+    "build-docker": "VER=$(jq -r .version package.json); docker build -t siuying/sqliteproxy:\"$VER\" .; docker tag siuying/sqliteproxy:\"$VER\" siuying/sqliteproxy:latest"
   }
 }
