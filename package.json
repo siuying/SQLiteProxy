@@ -20,7 +20,7 @@
     "http",
     "json"
   ],
-  "author": "assafmo",
+  "author": "siuying",
   "repository": {
     "type": "git",
     "url": "https://github.com/siuying/SQLiteProxy.git"
