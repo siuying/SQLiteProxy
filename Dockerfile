@@ -2,10 +2,10 @@ FROM node:latest
 
 RUN mkdir /src/
 COPY main.js /src/
-COPY package.json yarn.lock /src/
+COPY package.json package-lock.json /src/
 
 ENV CFLAGS "-DSQLITE_ENABLE_FTS3_TOKENIZER"
-RUN cd /src/; yarn install --pure-lockfile
+RUN cd /src/; npm install better-sqlite3 better-sqlite3-mozporter --build-from-source; npm install
 
 EXPOSE 2048
 

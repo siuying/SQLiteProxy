@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "better-sqlite3": "^5.0.1",
-    "better-sqlite3-mozporter": "^1.0.0",
+    "better-sqlite3-mozporter": "^1.0.4",
     "body-parser": "1.18.3",
     "compression": "1.7.3",
     "express": "4.16.4",
